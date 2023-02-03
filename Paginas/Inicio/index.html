@@ -15,14 +15,23 @@
 
 <body>
     <main>
-        <div className="container">
-            <div className="titulo">
-                <p>Bem-vindo(a) de novo detetive!</p>
+        <div className="containerTop">
+            <div className="subtitulo">
+                <p>O início...</p>
             </div>
+        </div>
 
-            <input id="nome" type="text" placeholder="Escreva seu nome" />
+        <div className="containerMiddle">
+            <div className="modal">
+                <p style="padding-top: 2rem;">Detetive! Que bom que você chegou. Recebemos um chamado de um corpo
+                    que foi encontrado na mansão dos Harringtons, sabe, os ricos influentes na cidade... O caso está em
+                    suas mãos, boa sorte!</p>
+                <p>A vítima é {"{nome da vítima}"}</p>
+            </div>
+        </div>
 
-            <a>Jogar</a>
+        <div className="containerBottom">
+            <a>Continuar</a>
         </div>
     </main>
 </body>
