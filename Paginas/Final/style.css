@@ -60,13 +60,13 @@ a {
     width: 8vw;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     select {
         width: 40vw;
     }
 
     a {
-        width: 12vw;
+        width: 15vw;
     }
 }
 
