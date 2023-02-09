@@ -87,12 +87,6 @@ a {
     width: 8vw;
 }
 
-@media only screen and (max-width: 1000px) {
-    a {
-        width: 15vw;
-    }
-}
-
 @media only screen and (max-width: 600px) {
     main {
         min-height: 100vw;
