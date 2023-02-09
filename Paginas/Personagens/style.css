@@ -15,8 +15,8 @@ main {
     flex-direction: column;
     height: 100vh;
     justify-content: space-between;
-    min-width: 100vw;
     padding: 2rem;
+    width: 100vw;
 }
 
 .containerTop {
@@ -94,6 +94,11 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
+    main {
+        min-width: 100vw;
+        width: 100%;
+    }
+
     .image {
         height: 60vw;
         width: 40vw;
