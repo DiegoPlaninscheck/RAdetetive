@@ -65,10 +65,10 @@ a {
 
 @media only screen and (max-width: 500px) {
     input {
-        width: 50vw;
+        width: 75vw;
     }
 
     a {
-        width: 20vw;
+        width: 25vw;
     }
 }
