@@ -77,6 +77,11 @@ a {
 }
 
 @media only screen and (max-width: 1000px) {
+    .modal {
+        height: 40vh;
+        width: 70vw;
+    }
+
     a {
         width: 15vw;
     }
@@ -84,7 +89,7 @@ a {
 
 @media only screen and (max-width: 600px) {
     .modal {
-        height: 35vh;
+        height: 40vh;
         width: 80vw;
     }
 
