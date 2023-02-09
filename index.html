@@ -11,6 +11,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script type='text/javascript'
+        src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body style="margin : 0px; overflow: hidden; font-family: Monospace;">
+    <a-scene embedded vr-mode-ui="enabled: false"
+        arjs="trackingMethod: best; sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false; changeMatrixMode: cameraTransformMatrix">
+        <a-entity camera>
+            <a-marker class="game-marker" id="marker1" type="barcode" data-code="1" value="1" registerevents="true">
+                <a-image class="text" src="./Assets/dracula.png">
+                </a-image>
+            </a-marker>
+        </a-entity>
+    </a-scene>
+    <script>
+        for (const marker of document.getElementsByClassName('game-marker')) {
+            marker.addEventListener('markerFound', (e) => console.log(e));
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detetive</title>
+    <link rel="shortcut icon" href="./src/Assets/ShortcutIcon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -27,4 +65,4 @@
     </main>
 </body>
 
-</html>
+</html> -->
