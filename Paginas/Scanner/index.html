@@ -27,6 +27,16 @@
             </a-marker>
         </a-entity>
     </a-scene>
+    <script>
+        AFRAME.registerComponent('markerhandler', {
+          init: function () {
+            this.el.sceneEl.addEventListener('markerFound', () => {
+                alert("sfdhifffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff")
+              // redirect to custom URL
+            //   window.location = 'https://github.com/AR-js-org/AR.js';
+            });
+        }})
+      </script>
 </body>
 
 </html>
