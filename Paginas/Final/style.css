@@ -20,6 +20,7 @@ main {
     display: flex;
     height: 100vh;
     justify-content: center;
+    padding: 1rem;
     width: 100vw;
 }
 
@@ -57,4 +58,24 @@ a {
     padding: 1rem;
     text-decoration: none;
     width: 8vw;
+}
+
+@media only screen and (max-width: 900px) {
+    select {
+        width: 40vw;
+    }
+
+    a {
+        width: 12vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    select {
+        width: 75vw;
+    }
+
+    a {
+        width: 25vw;
+    }
 }
