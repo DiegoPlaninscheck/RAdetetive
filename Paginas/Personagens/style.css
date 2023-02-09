@@ -99,9 +99,8 @@ a {
         height: auto;
     }
 
-    .image {
-        height: 60vw;
-        width: 40vw;
+    .containerMiddle {
+        padding: 1rem 0;
     }
 
     .rowTop,
@@ -112,6 +111,12 @@ a {
         justify-content: center;
         width: 100%;
     }
+
+    .image {
+        height: 60vw;
+        width: 40vw;
+    }
+
 
     a {
         width: 40vw;
