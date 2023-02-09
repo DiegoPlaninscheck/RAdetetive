@@ -83,6 +83,10 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
+    .modal {
+        width: 80vw;
+    }
+
     a {
         width: 30vw;
     }
