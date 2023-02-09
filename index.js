@@ -85,6 +85,7 @@ const personagens = [
     },
 ];
 
+alert("exemplo")
 
 let assasino;
 let possiveisVitmas;
