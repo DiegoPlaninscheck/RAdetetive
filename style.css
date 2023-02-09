@@ -62,3 +62,13 @@ a {
     text-decoration: none;
     width: 8vw;
 }
+
+@media only screen and (max-widht: 500px) {
+    input {
+        width: 50vw;
+    }
+
+    a {
+        width: 20vw;
+    }
+}
