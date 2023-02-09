@@ -83,82 +83,73 @@ const personagens = [
         menssagemFinal: "Hortêncio matou PESSOADAFAMILIA a envenenando durante o jantar, o plano era matar todos mas nunca havia mexido com materiais tóxicos antes, o veneno demorou para fazer efeito, e quando PESSOADAFAMILIA foi para o primeiro andar em busca de remédios caiu da escada",
         pessoasImpossiveis: [4, 5, 6]
     },
-]
+];
 
-let assasino
-let possiveisVitmas
-let morto
+
+let assasino;
+let possiveisVitmas;
+let morto;
 let quemAchouMorto = null;
 
 function iniciarNovoJogo() {
-    const numeroAleatorio = parseInt(Math.random() * 5)
-    assasino = personagens.find(p => p.id == numeroAleatorio + 1)
+    const numeroAleatorio = parseInt(Math.random() * 5);
+    assasino = personagens.find(p => p.id == numeroAleatorio + 1);
 
-    localStorage.setItem("ASSASINO", JSON.stringify(assasino))
+    localStorage.setItem("ASSASINO", JSON.stringify(assasino));
 
     possiveisVitmas = personagens.filter((personagem) => {
-        let impossivelPorAssasino = false
+        let impossivelPorAssasino = false;
 
         for (let idNaoVitmasAssasino of assasino.pessoasImpossiveis) {
             if (personagem.id == idNaoVitmasAssasino) {
-                impossivelPorAssasino = true
-                break
-            }
-        }
+                impossivelPorAssasino = true;
+                break;
+            };
+        };
 
         if (!impossivelPorAssasino) {
-            return personagem
-        }
-    })
+            return personagem;
+        };
+    });
 
-    const numeroAleatorio2 = parseInt(Math.random() * possiveisVitmas.length)
-    morto = possiveisVitmas[numeroAleatorio2]
-    possiveisVitmas.splice(numeroAleatorio2, 1)
+    const numeroAleatorio2 = parseInt(Math.random() * possiveisVitmas.length);
+    morto = possiveisVitmas[numeroAleatorio2];
+    possiveisVitmas.splice(numeroAleatorio2, 1);
 
     if (assasino.alguemAchou) {
-        const numeroAleatorio3 = parseInt(Math.random() * possiveisVitmas.length )
+        const numeroAleatorio3 = parseInt(Math.random() * possiveisVitmas.length);
 
-        quemAchouMorto = possiveisVitmas[numeroAleatorio3]
-    }
+        quemAchouMorto = possiveisVitmas[numeroAleatorio3];
+    };
 
 
     console.log(morto.nome);
-    localStorage.setItem("MORTO", morto.nome)
-}
+    localStorage.setItem("MORTO", morto.nome);
+};
 
 
-
-
-
-
-
-
-
-
-const pistasVistas = [false, false, false, false, false]
-let pistaMostrar = ""
-let acabouJogo = false
-
+const pistasVistas = [false, false, false, false, false];
+let pistaMostrar = "";
+let acabouJogo = false;
 
 function verPista(valorMarcador) {
     if (checarPistasAnteriores(valorMarcador)) {
-        return "Você não pode ver essa pista sem antes ter encontrado as anteriores a ela"
-    }
+        return "Você não pode ver essa pista sem antes ter encontrado as anteriores a ela";
+    };
 
-    pistaMostrar = assasino.dicasAssasino[valorMarcador - 1]
+    pistaMostrar = assasino.dicasAssasino[valorMarcador - 1];
 
     if (valorMarcador == 5) {
-        acabouJogo = true
-    }
-}
-
+        acabouJogo = true;
+    };
+};
 
 function checarPistasAnteriores(valorMarcador) {
     for (let i = valorMarcador; i > 0; i--) {
         if (!pistasVistas[i - 2]) {
-            return false
-        }
-    }
+            return false;
+        };
+    };
 
-    return true
-}
+    return true;
+};
