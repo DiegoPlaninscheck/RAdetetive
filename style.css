@@ -64,16 +64,6 @@ a {
     width: 8vw;
 }
 
-@media only screen and (max-width: 1000px) {
-    input {
-        width: 40vw;
-    }
-
-    a {
-        width: 15vw;
-    }
-}
-
 @media only screen and (max-width: 600px) {
     input {
         width: 75vw;
