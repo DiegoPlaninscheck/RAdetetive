@@ -95,7 +95,7 @@ a {
 
 @media only screen and (max-width: 600px) {
     .image {
-        height: 50vw;
+        height: 60vw;
         width: 40vw;
     }
 
