@@ -28,19 +28,19 @@ function getVariavelTexto(idMarcador) {
     let texto = null
 
     switch (idMarcador) {
-        case 1: 
+        case '1': 
             texto = document.getElementById("texto1")
             break
-        case 2: 
+        case '2': 
             texto = document.getElementById("texto2")
             break
-        case 3: 
+        case '3': 
             texto = document.getElementById("texto3")
             break
-        case 4: 
+        case '4': 
             texto = document.getElementById("texto4")
             break
-        case 5: 
+        case '5': 
             texto = document.getElementById("texto5")
             break
     }
@@ -51,30 +51,30 @@ function getVariavelTexto(idMarcador) {
 function checarPistasAnteriores(idMarcador) {
 
     switch (idMarcador) {
-        case 1: {
+        case '1': {
             alert("1");
 
             return false
         }
-        case 2: {
+        case '2': {
             if (pistasVistas[0]) {
                 alert("2");
                 return false
             }
         }
-        case 3: {
+        case '3': {
             if (pistasVistas[0] && pistasVistas[1]) {
                 alert("3");
                 return false
             }
         }
-        case 4: {
+        case '4': {
             if (pistasVistas[0] && pistasVistas[1] && pistasVistas[2]) {
                 alert("4");
                 return false
             }
         }
-        case 5: {
+        case '5': {
             if (pistasVistas[0] && pistasVistas[1] && pistasVistas[2] && pistasVistas[3]) {
                 alert("5");
                 return false
