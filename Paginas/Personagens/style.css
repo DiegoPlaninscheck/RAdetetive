@@ -90,7 +90,7 @@ a {
 #fundo {
     align-items: center;
     background-color: #11111190;
-    display: none;
+    display: flex;
     height: 100vh;
     justify-content: center;
     left: 0;
