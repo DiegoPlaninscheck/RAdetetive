@@ -109,7 +109,7 @@ a {
     height: 50vh;
     justify-content: space-between;
     padding: 2rem;
-    visibility: visible;
+    visibility: hidden;
     width: 50vw;
 }
 
