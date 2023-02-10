@@ -1,4 +1,4 @@
-const pistasVistas = [false, false, false, false, false]
+
 const assasino = JSON.parse(localStorage.getItem("ASSASINO"))
 const morto = localStorage.getItem("MORTO");
 const quemAchouMorto = localStorage.getItem("QUEMACHOUMORTO")
@@ -20,6 +20,9 @@ texto3.setAttribute("value", assasino.dicasAssasino[2])
 texto4.setAttribute("value", assasino.dicasAssasino[3])
 texto5.setAttribute("value", assasino.dicasAssasino[4])
 
+//testes
+const pistasVistas = [true, false, false, false, false]
+console.log(verPista(3))
  
 for (const marker of document.getElementsByClassName('game-marker')) {
     marker.addEventListener('markerFound', (e) => {
@@ -49,8 +52,15 @@ function verPista(valorMarcador) {
 
 
 function checarPistasAnteriores(valorMarcador) {
+    if(valorMarcador == 1){
+        return false
+    }
+
+
+    //ARRUMA ESSA LÒGICO PQP
     for (let i = valorMarcador; i > 0; i--) {
-        if (!pistasVistas[i - 2]) {
+        console.log(pistasVistas[i - 2]);
+        if (pistasVistas[i - 2]) {
             return false
         }
     }
