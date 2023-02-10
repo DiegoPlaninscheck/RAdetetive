@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <script defer type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
@@ -20,17 +21,17 @@
                 <p>Então detetive, quem é o assassino?</p>
             </div>
 
-            <select name="" id="">
+            <select name="" id="nomes">
                 <option value="" selected disabled>Escolha um nome</option>
-                <option value="jailson">Sr. Jainsol Harrington</option>
-                <option value="jamila">Sra. jamila Harrington</option>
-                <option value="jered">Jered Harrington</option>
-                <option value="cleyton">Cleyton</option>
-                <option value="antonio">Antônio</option>
-                <option value="hortencio">Hortêncio</option>
+                <option value="Sr. Jailson Harrington">Sr. Jailson Harrington</option>
+                <option value="Sra. jamila Harrington">Sra. Jamila Harrington</option>
+                <option value="Jered Harrington">Jered Harrington</option>
+                <option value="Cleyton">Cleyton</option>
+                <option value="Antônio">Antônio</option>
+                <option value="Hortêncio">Hortêncio</option>
             </select>
 
-            <a>Confirmar</a>
+            <a id="confirmar" onclick="confirmarEscolha()">Confirmar</a>
         </div>
     </main>
 </body>

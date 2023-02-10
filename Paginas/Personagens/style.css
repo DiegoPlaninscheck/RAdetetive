@@ -157,3 +157,7 @@ a {
         width: 80vw;
     }
 }
+
+#botaoFinal{
+    display: none;
+}

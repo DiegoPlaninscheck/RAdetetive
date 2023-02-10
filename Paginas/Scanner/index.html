@@ -13,55 +13,41 @@
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script type='text/javascript'
         src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
-    <script defer type="text/javascript" src="index.js"></script>
+    <script defer type="text/javascript" src="script.js"></script>
 </head>
 
 <body style="margin : 0px; overflow: hidden; font-family: Monospace;">
-    <button id="botao1">
-        clia caqui
-    </button>
-    <button id="botao2">
-        clia caqui
-    </button>
-    <button id="botao3">
-        clia caqui
-    </button>
-    <button id="botao4">
-        clia caqui
-    </button>
-    <button id="botao5">
-        clia caqui
-    </button>
-    <a-scene embedded vr-mode-ui="enabled: false" renderer="logarithmicDepthBuffer: true;"
+   <a-scene embedded vr-mode-ui="enabled: false" renderer="logarithmicDepthBuffer: true;"
         arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
         <a-entity camera>
             <a-marker markerhandler class="game-marker" id="1" type="barcode" data-code="1" value="1"
                 registerevents="true">
-                <a-text class="text" position='-.5 -1 -1.8' rotation='-45 0 0' color='red' id="texto1">
+                <a-text class="text" position='-.5 -1 -1.8' rotation='-45 0 0' id="texto1">
                 </a-text>
             </a-marker>
             <a-marker markerhandler class="game-marker" id="2" type="barcode" data-code="2" value="2"
                 registerevents="true">
-                <a-text class="text" position='-.5 -1 -1.8' rotation='-45 0 0' color='red' id="texto2">
+                <a-text class="text" position='-.5 -1 -1.8' rotation='-45 0 0' id="texto2">
                 </a-text>
             </a-marker>
             <a-marker markerhandler class="game-marker" id="3" type="barcode" data-code="3" value="3"
                 registerevents="true">
-                <a-text class="text" position='-.5 -1 -1.8' rotation='-45 0 0' color='red' id="texto3">
+                <a-text class="text" position='-.5 -1 -1.8' rotation='-45 0 0' id="texto3">
                 </a-text>
             </a-marker>
             <a-marker markerhandler class="game-marker" id="4" type="barcode" data-code="4" value="4"
                 registerevents="true">
-                <a-text class="text" position='-.5 -1 -1.8' rotation='-45 0 0' color='red' id="texto4">
+                <a-text class="text" position='-.5 -1 -1.8' rotation='-45 0 0' id="texto4">
                 </a-text>
             </a-marker>
             <a-marker markerhandler class="game-marker" id="5" type="barcode" data-code="5" value="5"
                 registerevents="true">
-                <a-text class="text" position='-.5 -1 -1.8' rotation='-45 0 0' color='red' id="texto5">
+                <a-text class="text" position='-.5 -1 -1.8' rotation='-45 0 0' id="texto5">
                 </a-text>
             </a-marker>
         </a-entity>
     </a-scene>
+    <a id="jogar" href="/Paginas/Personagens/index.html" >Voltar</a>
 </body>
 
 </html>
