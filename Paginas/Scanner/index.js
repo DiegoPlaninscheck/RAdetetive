@@ -10,9 +10,9 @@ if(assasino.alguemAchou){
 }
 
 const texto1 = document.getElementById("texto1")
-texto1.innerText = pistaTexto
+texto1.value = pistaTexto
 
-console.log(texto1.innerText);
+console.log(texto1.value);
 
 
  
