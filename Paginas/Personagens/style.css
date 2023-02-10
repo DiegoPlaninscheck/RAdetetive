@@ -88,8 +88,11 @@ a {
 }
 
 .fundo {
+    align-items: center;
     background-color: #11111190;
+    display: flex;
     height: 100vh;
+    justify-content: center;
     left: 0;
     position: absolute;
     top: 0;
