@@ -8,12 +8,6 @@
     padding: 0;
 }
 
-.titulo p {
-    font-size: 32px;
-    font-weight: 700;
-    text-align: center
-}
-
 main {
     align-items: center;
     background-color: #111;
@@ -35,6 +29,12 @@ main {
     height: 35vh;
     justify-content: space-between;
     width: 100%;
+}
+
+.titulo p {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center
 }
 
 input {
