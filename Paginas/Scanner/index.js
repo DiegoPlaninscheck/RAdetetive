@@ -1,4 +1,4 @@
-const pistasVistas = [false, false, false, false, false]
+const pistasVistas = JSON.parse(localStorage.getItem("PISTASVISTAS"))
 const assasino = JSON.parse(localStorage.getItem("ASSASINO"))
 const morto = localStorage.getItem("MORTO");
 const quemAchouMorto = localStorage.getItem("QUEMACHOUMORTO")
@@ -35,6 +35,7 @@ for (const marker of document.getElementsByClassName('game-marker')) {
         }
 
         pistasVistas[idMarcador - 1] = true
+        localStorage.setItem("PISTASVISTAS", pistasVistas)
     });
     marker.addEventListener('markerLost', (e) => {
         condicoesNormais()
