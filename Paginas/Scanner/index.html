@@ -11,10 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-
     <script type='text/javascript'
         src='https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js'></script>
-    <link rel="stylesheet" href="style.css">
+    <script defer type="text/javascript" src="index.js"></script>
 </head>
 
 <body style="margin : 0px; overflow: hidden; font-family: Monospace;">
@@ -28,17 +27,6 @@
             </a-marker>
         </a-entity>
     </a-scene>
-    <script>
-        AFRAME.registerComponent('markerhandler', {
-            init: function () {
-                this.el.sceneEl.addEventListener('markerFound', () => {
-                    alert("sfdhifffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff")
-                    // redirect to custom URL
-                    //   window.location = 'https://github.com/AR-js-org/AR.js';
-                });
-            }
-        })
-    </script>
 </body>
 
 </html>
