@@ -23,7 +23,14 @@ texto5.setAttribute("value", assasino.dicasAssasino[4])
  
 for (const marker of document.getElementsByClassName('game-marker')) {
     marker.addEventListener('markerFound', (e) => {
-        // verPista(e.target.id)
+        const idMarcador = e.target.id
+        const verPista = verPista(idMarcador)
+        if(verPista != null){
+            alert(verPista)
+            return
+        }
+
+        pistasVistas[idMarcador - 1] = true
     });
 }
 
@@ -33,11 +40,11 @@ function verPista(valorMarcador) {
         return "Você não pode ver essa pista sem antes ter encontrado as anteriores a ela"
     }
 
-    pistaMostrar = assasino.dicasAssasino[valorMarcador - 1]
-
     if (valorMarcador == 5) {
         localStorage.setItem("ACABOUJOGO", "true")
     }
+
+    return null;
 }
 
 
