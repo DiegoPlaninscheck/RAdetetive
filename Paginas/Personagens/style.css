@@ -87,7 +87,7 @@ a {
     width: 8vw;
 }
 
-.fundo {
+#fundo {
     align-items: center;
     background-color: #11111190;
     display: flex;
@@ -99,7 +99,7 @@ a {
     width: 100vw;
 }
 
-.modal {
+#modal {
     align-items: center;
     background-color: #333;
     border-radius: 1rem;
