@@ -14,7 +14,7 @@ const texto2 = document.getElementById("texto2")
 const texto3 = document.getElementById("texto3")
 const texto4 = document.getElementById("texto4")
 const texto5 = document.getElementById("texto5")
-condicoesNormais()
+
 
 function condicoesNormais() {
     texto1.setAttribute("value", pistaTexto)
@@ -22,24 +22,6 @@ function condicoesNormais() {
     texto3.setAttribute("value", assasino.dicasAssasino[2])
     texto4.setAttribute("value", assasino.dicasAssasino[3])
     texto5.setAttribute("value", assasino.dicasAssasino[4])
-}
-
-for (const marker of document.getElementsByClassName('game-marker')) {
-    marker.addEventListener('markerFound', (e) => {
-        const idMarcador = e.target.id
-        const verPista = verPista(idMarcador)
-        if (verPista != null) {
-            const texto = getVariavelTexto(e.target.id)
-            texto.setAttribute("value", verPista)
-            return
-        }
-
-        pistasVistas[idMarcador - 1] = true
-        localStorage.setItem("PISTASVISTAS", pistasVistas)
-    });
-    marker.addEventListener('markerLost', (e) => {
-        condicoesNormais()
-    })
 }
 
 function getVariavelTexto(idMarcador){
@@ -52,22 +34,9 @@ function getVariavelTexto(idMarcador){
     }
 }
 
-function verPista(valorMarcador) {
-    if (checarPistasAnteriores(valorMarcador)) {
-        return "Você não pode ver essa pista sem antes ter encontrado as anteriores a ela"
-    }
+function checarPistasAnteriores(idMarcador) {
 
-    if (valorMarcador == 5) {
-        localStorage.setItem("ACABOUJOGO", "true")
-    }
-
-    return null;
-}
-
-
-function checarPistasAnteriores(valorMarcador) {
-
-    switch (valorMarcador) {
+    switch (idMarcador) {
         case 1: {
             return false
         }
@@ -95,3 +64,63 @@ function checarPistasAnteriores(valorMarcador) {
 
     return true
 }
+
+function verPista(idMarcador) {
+    if (checarPistasAnteriores(idMarcador)) {
+        return "Você não pode ver essa pista sem antes ter encontrado as anteriores a ela"
+    }
+
+    if (idMarcador == 5) {
+        localStorage.setItem("ACABOUJOGO", "true")
+    }
+
+    return null;
+}
+
+function markerfound(idMarcador){
+    const verPistaResultado = verPista(idMarcador)
+    if (verPistaResultado != null) {
+        const texto = getVariavelTexto(idMarcador)
+        texto.setAttribute("value", verPistaResultado)
+        return
+    }
+
+    pistasVistas[idMarcador - 1] = true
+    localStorage.setItem("PISTASVISTAS", JSON.stringify(pistasVistas))
+}
+
+for (const marker of document.getElementsByClassName('game-marker')) {
+    marker.addEventListener('markerFound', (e) => {
+        markerfound(e.target.id)
+    });
+    marker.addEventListener('markerLost', (e) => {
+        condicoesNormais()
+    })
+}
+
+// const botao1 = document.getElementById("botao1")
+// botao1.addEventListener('click', (e) => {
+//     markerfound(1)
+// })
+
+// const botao2 = document.getElementById("botao2")
+// botao2.addEventListener('click', (e) => {
+//     markerfound(2)
+// })
+
+// const botao3 = document.getElementById("botao3")
+// botao3.addEventListener('click', (e) => {
+//     markerfound(3)
+// })
+
+// const botao4 = document.getElementById("botao4")
+// botao4.addEventListener('click', (e) => {
+//     markerfound(4)
+// })
+
+// const botao5 = document.getElementById("botao5")
+// botao5.addEventListener('click', (e) => {
+//     markerfound(5)
+// })
+
+condicoesNormais()
