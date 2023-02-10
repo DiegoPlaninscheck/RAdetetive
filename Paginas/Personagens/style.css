@@ -87,6 +87,19 @@ a {
     width: 8vw;
 }
 
+.fundo {
+    background-color: red;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+}
+
+.modal {
+
+}
+
 @media only screen and (max-width: 600px) {
     main {
         min-height: 100vw;
