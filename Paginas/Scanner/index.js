@@ -24,13 +24,23 @@ function condicoesNormais() {
     texto5.setAttribute("value", assasino.dicasAssasino[4])
 }
 
-function getVariavelTexto(idMarcador){
-    switch(idMarcador){
-        case 1: return texto1
-        case 2: return texto2
-        case 3: return texto3
-        case 4: return texto4
-        case 5: return texto5
+function getVariavelTexto(idMarcador) {
+    switch (idMarcador) {
+        case 1: {
+            return texto1
+        }
+        case 2: {
+            return texto2
+        }
+        case 3: {
+            return texto3
+        }
+        case 4: {
+            return texto4
+        }
+        case 5: {
+            return texto5
+        }
     }
 }
 
@@ -83,7 +93,7 @@ function verPista(idMarcador) {
     return null;
 }
 
-function markerfound(idMarcador){
+function markerfound(idMarcador) {
     alert(idMarcador);
 
     const verPistaResultado = verPista(idMarcador)
@@ -93,6 +103,7 @@ function markerfound(idMarcador){
     if (verPistaResultado != null) {
         alert("NÃO PODE")
         const texto = getVariavelTexto(idMarcador)
+        alert(texto)
         texto.setAttribute("value", verPistaResultado)
         return
     }
