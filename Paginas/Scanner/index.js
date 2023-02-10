@@ -79,6 +79,9 @@ function verPista(idMarcador) {
 
 function markerfound(idMarcador){
     const verPistaResultado = verPista(idMarcador)
+
+    alert(verPistaResultado)
+
     if (verPistaResultado != null) {
         alert("NÂO PODE")
         const texto = getVariavelTexto(idMarcador)
