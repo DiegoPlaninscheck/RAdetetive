@@ -52,31 +52,25 @@ function checarPistasAnteriores(idMarcador) {
 
     switch (idMarcador) {
         case '1': {
-            alert("1");
-
             return false
         }
         case '2': {
             if (pistasVistas[0]) {
-                alert("2");
                 return false
             }
         }
         case '3': {
             if (pistasVistas[0] && pistasVistas[1]) {
-                alert("3");
                 return false
             }
         }
         case '4': {
             if (pistasVistas[0] && pistasVistas[1] && pistasVistas[2]) {
-                alert("4");
                 return false
             }
         }
         case '5': {
             if (pistasVistas[0] && pistasVistas[1] && pistasVistas[2] && pistasVistas[3]) {
-                alert("5");
                 return false
             }
         }
@@ -98,16 +92,10 @@ function verPista(idMarcador) {
 }
 
 function markerfound(idMarcador) {
-    alert(idMarcador);
-
     const verPistaResultado = verPista(idMarcador)
 
-    alert(verPistaResultado)
-
     if (verPistaResultado != null) {
-        alert("NÃO PODE")
         const texto = getVariavelTexto(idMarcador)
-        alert(texto)
         texto.setAttribute("value", verPistaResultado)
         return
     }
