@@ -10,7 +10,7 @@ if(assasino.alguemAchou){
 }
 
 const texto1 = document.getElementById("texto1")
-texto1.value = pistaTexto
+texto1.setAttribute("value", pistaTexto)
 
 console.log(texto1.value);
 
