@@ -2,11 +2,7 @@ const pistasVistas = [false, false, false, false, false]
 let pistaMostrar = ""
 let acabouJogo = false
  
-for (const marker of document.getElementsByClassName('game-marker')) {
-    marker.addEventListener('markerFound', (e) => {
-        alert(e.value);
-    });
-}
+
 
 
 function verPista(valorMarcador) {
