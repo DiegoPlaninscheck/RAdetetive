@@ -25,23 +25,27 @@ function condicoesNormais() {
 }
 
 function getVariavelTexto(idMarcador) {
+    let texto = null
+
     switch (idMarcador) {
-        case 1: {
-            return document.getElementById("texto1")
-        }
-        case 2: {
-            return document.getElementById("texto2")
-        }
-        case 3: {
-            return document.getElementById("texto3")
-        }
-        case 4: {
-            return document.getElementById("texto4")
-        }
-        case 5: {
-            return document.getElementById("texto5")
-        }
+        case 1: 
+            texto = document.getElementById("texto1")
+            break
+        case 2: 
+            texto = document.getElementById("texto2")
+            break
+        case 3: 
+            texto = document.getElementById("texto3")
+            break
+        case 4: 
+            texto = document.getElementById("texto4")
+            break
+        case 5: 
+            texto = document.getElementById("texto5")
+            break
     }
+
+    return texto
 }
 
 function checarPistasAnteriores(idMarcador) {
