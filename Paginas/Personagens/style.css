@@ -90,7 +90,7 @@ a {
 .fundo {
     align-items: center;
     background-color: #11111190;
-    display: block;
+    display: flex;
     height: 100vh;
     justify-content: center;
     left: 0;
@@ -104,7 +104,7 @@ a {
     background-color: #333;
     border-radius: 1rem;
     box-shadow: 5px 5px 10px 0 #00000050;
-    display: block;
+    display: flex;
     height: 50vh;
     justify-content: space-between;
     padding: 2rem;
