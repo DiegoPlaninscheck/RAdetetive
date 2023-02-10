@@ -14,6 +14,7 @@ const texto2 = document.getElementById("texto2")
 const texto3 = document.getElementById("texto3")
 const texto4 = document.getElementById("texto4")
 const texto5 = document.getElementById("texto5")
+condicoesNormais()
 
 function condicoesNormais() {
     texto1.setAttribute("value", pistaTexto)
@@ -49,7 +50,6 @@ function getVariavelTexto(idMarcador){
         case 5: return texto5
     }
 }
-
 
 function verPista(valorMarcador) {
     if (checarPistasAnteriores(valorMarcador)) {
