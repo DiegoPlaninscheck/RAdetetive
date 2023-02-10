@@ -7,6 +7,6 @@ for(const personagem of personagens){
 }
 
 function abrirModal(fundo, modal) {
-    fundo.style.visibility="visible";
-    modal.style.visibility="visible";
+    fundo.style.display="flex";
+    modal.style.display="flex";
 };
