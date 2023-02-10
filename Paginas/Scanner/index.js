@@ -1,8 +1,19 @@
 const pistasVistas = [false, false, false, false, false]
 const assasino = JSON.parse(localStorage.getItem("ASSASINO"))
+const morto = localStorage.getItem("MORTO");
+const quemAchouMorto = localStorage.getItem("QUEMACHOUMORTO")
+let pistaTexto = assasino.dicasAssasino[0]
+pistaTexto = pistaTexto.replace("PESSOAMORTA", morto)
+
+if(assasino.alguemAchou){
+    pistaTexto = pistaTexto.replace('PESSOA', quemAchouMorto )
+}
 
 const texto1 = document.getElementById("texto1")
-texto1.value = assasino.dicasAssasino[0]
+texto1.innerText = pistaTexto
+
+console.log(texto1.innerText);
+
 
  
 for (const marker of document.getElementsByClassName('game-marker')) {

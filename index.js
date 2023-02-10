@@ -119,6 +119,8 @@ function iniciarNovoJogo() {
         const numeroAleatorio3 = parseInt(Math.random() * possiveisVitmas.length);
 
         quemAchouMorto = possiveisVitmas[numeroAleatorio3];
+
+        localStorage.setItem("QUEMACHOUMORTO", quemAchouMorto.nome)
     };
 
 
