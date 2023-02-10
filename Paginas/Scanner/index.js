@@ -1,11 +1,13 @@
 const pistasVistas = [false, false, false, false, false]
-let pistaMostrar = ""
-let acabouJogo = false
+const assasino = JSON.parse(localStorage.getItem("ASSASINO"))
+
+const texto1 = document.getElementById("texto1")
+texto1.value = assasino.dicasAssasino[0]
+
  
 for (const marker of document.getElementsByClassName('game-marker')) {
     marker.addEventListener('markerFound', (e) => {
-        alert(e.target.id);
-        alert(e.id);
+        // verPista(e.target.id)
     });
 }
 
@@ -18,7 +20,7 @@ function verPista(valorMarcador) {
     pistaMostrar = assasino.dicasAssasino[valorMarcador - 1]
 
     if (valorMarcador == 5) {
-        acabouJogo = true
+        localStorage.setItem("ACABOUJOGO", "true")
     }
 }
 
