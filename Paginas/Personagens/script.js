@@ -1,8 +1,10 @@
 const peronagem = document.getElementsByClassName("containerCharacter");
-const modal = document.getElementsByClassName("fundo");
+const fundo = document.getElementsByClassName("fundo");
+const modal = document.getElementsByClassName("modal")
 
 peronagem.addEventListener("click", abrirModal);
 
 function abrirModal() {
-    modal.style.display="flex";
+    fundo.style.visibility="visible";
+    modal.style.visibility="visible";
 }
