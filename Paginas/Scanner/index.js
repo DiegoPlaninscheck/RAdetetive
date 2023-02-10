@@ -38,25 +38,31 @@ function checarPistasAnteriores(idMarcador) {
 
     switch (idMarcador) {
         case 1: {
+            alert("1");
+
             return false
         }
         case 2: {
             if (pistasVistas[0]) {
+                alert("2");
                 return false
             }
         }
         case 3: {
             if (pistasVistas[0] && pistasVistas[1]) {
+                alert("3");
                 return false
             }
         }
         case 4: {
             if (pistasVistas[0] && pistasVistas[1] && pistasVistas[2]) {
+                alert("4");
                 return false
             }
         }
         case 5: {
             if (pistasVistas[0] && pistasVistas[1] && pistasVistas[2] && pistasVistas[3]) {
+                alert("5");
                 return false
             }
         }
@@ -78,12 +84,14 @@ function verPista(idMarcador) {
 }
 
 function markerfound(idMarcador){
+    alert(idMarcador);
+
     const verPistaResultado = verPista(idMarcador)
 
     alert(verPistaResultado)
 
     if (verPistaResultado != null) {
-        alert("NÂO PODE")
+        alert("NÃO PODE")
         const texto = getVariavelTexto(idMarcador)
         texto.setAttribute("value", verPistaResultado)
         return
@@ -102,29 +110,29 @@ for (const marker of document.getElementsByClassName('game-marker')) {
     })
 }
 
-// const botao1 = document.getElementById("botao1")
-// botao1.addEventListener('click', (e) => {
-//     markerfound(1)
-// })
+const botao1 = document.getElementById("botao1")
+botao1.addEventListener('click', (e) => {
+    markerfound(1)
+})
 
-// const botao2 = document.getElementById("botao2")
-// botao2.addEventListener('click', (e) => {
-//     markerfound(2)
-// })
+const botao2 = document.getElementById("botao2")
+botao2.addEventListener('click', (e) => {
+    markerfound(2)
+})
 
-// const botao3 = document.getElementById("botao3")
-// botao3.addEventListener('click', (e) => {
-//     markerfound(3)
-// })
+const botao3 = document.getElementById("botao3")
+botao3.addEventListener('click', (e) => {
+    markerfound(3)
+})
 
-// const botao4 = document.getElementById("botao4")
-// botao4.addEventListener('click', (e) => {
-//     markerfound(4)
-// })
+const botao4 = document.getElementById("botao4")
+botao4.addEventListener('click', (e) => {
+    markerfound(4)
+})
 
-// const botao5 = document.getElementById("botao5")
-// botao5.addEventListener('click', (e) => {
-//     markerfound(5)
-// })
+const botao5 = document.getElementById("botao5")
+botao5.addEventListener('click', (e) => {
+    markerfound(5)
+})
 
 condicoesNormais()
