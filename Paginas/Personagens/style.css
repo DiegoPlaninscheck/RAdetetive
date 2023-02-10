@@ -97,7 +97,20 @@ a {
 }
 
 .modal {
+    align-items: center;
+    background-color: #333;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px 0 #00000050;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 4rem;
+    width: 50vw;
+}
 
+.modal p {
+    text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
