@@ -4,7 +4,8 @@ let acabouJogo = false
  
 for (const marker of document.getElementsByClassName('game-marker')) {
     marker.addEventListener('markerFound', (e) => {
-        alert(e.target);
+        alert(e.target.id);
+        alert(e.id);
     });
 }
 
