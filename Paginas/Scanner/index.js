@@ -27,19 +27,19 @@ function condicoesNormais() {
 function getVariavelTexto(idMarcador) {
     switch (idMarcador) {
         case 1: {
-            return texto1
+            return document.getElementById("texto1")
         }
         case 2: {
-            return texto2
+            return document.getElementById("texto2")
         }
         case 3: {
-            return texto3
+            return document.getElementById("texto3")
         }
         case 4: {
-            return texto4
+            return document.getElementById("texto4")
         }
         case 5: {
-            return texto5
+            return document.getElementById("texto5")
         }
     }
 }
