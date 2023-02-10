@@ -144,4 +144,9 @@ a {
     a {
         width: 40vw;
     }
+
+    .modal {
+        height: 60vh;
+        width: 80vw;
+    }
 }
