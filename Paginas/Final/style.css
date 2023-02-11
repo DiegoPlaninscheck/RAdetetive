@@ -69,3 +69,13 @@ a {
         width: 40vw;
     }
 }
+
+#textoFinal {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    margin-top: 20px;
+
+}
