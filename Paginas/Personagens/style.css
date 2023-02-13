@@ -84,7 +84,7 @@ a {
     justify-content: center;
     padding: 1rem;
     text-decoration: none;
-    width: 8vw;
+    margin-left: 10px;
 }
 
 #fundo {

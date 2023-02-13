@@ -75,7 +75,13 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     font-size: large;
     margin-top: 20px;
+    text-align: justify;
+}
 
+#link {
+    width: 100%;
+    margin-top: 20px;
 }
