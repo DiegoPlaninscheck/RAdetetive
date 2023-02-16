@@ -183,7 +183,7 @@ a {
         width: 90vw;
     }
 
-    .columnMiddle {
-        width: 30vw;
+    .columnleft {
+        display: none;
     }
 }
