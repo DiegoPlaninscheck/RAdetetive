@@ -187,4 +187,8 @@ a {
         display: none;
         visibility: hidden;
     }
+
+    .columnMiddle {
+        width: auto;
+    }
 }
