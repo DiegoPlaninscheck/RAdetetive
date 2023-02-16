@@ -19,7 +19,7 @@ function confirmarEscolha() {
     }
 
     link.href = "../../index.html"
-    link.innerText = "Voltar ao menu inicial"
+    link.innerText = "Voltar ao início"
     link.id = "link"
 
     div.innerText = textoFinal;
