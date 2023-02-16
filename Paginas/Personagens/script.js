@@ -61,9 +61,9 @@ for (const personagem of personagens) {
 function abrirModal(personagem) {
     fundo.style.display = "flex";
 
-    if(personagem == infoPersonagens[0]) {
-        alert("É o Jailson")
-    }
+    // if(personagem == infoPersonagens[0]) {
+    //     alert("É o Jailson")
+    // }
 };
 
 fechar.addEventListener("click", fecharModal);
