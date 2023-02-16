@@ -54,25 +54,24 @@ const fundo = document.getElementById("fundo");
 const fechar = document.getElementById("fechar");
 
 for (const personagem of personagens) {
-    personagem.addEventListener("click", abrirModal);
-};
+    personagem.addEventListener("click", function abrirModal() {
+        fundo.style.display = "flex";
 
-function abrirModal() {
-    fundo.style.display = "flex";
-    
-    if(personagens[0]) {
-        console.log("É o Jailson");
-    } else if(personagens[1]) {
-        console.log("É a jamila");
-    } else if(personagens[2]) {
-        console.log("É o Jered");
-    } else if(personagens[3]) {
-        console.log("É o Cleyton");
-    } else if(personagens[4]) {
-        console.log("É o Antônio");
-    } else if(personagens[5]) {
-        console.log("É o Hortêncio");
-    };
+        if (personagem == personagens[0]) {
+            console.log("É o Jailson");
+        } else if (personagem == personagens[1]) {
+            console.log("É a jamila");
+        } else if (personagem == personagens[2]) {
+            console.log("É o Jered");
+        } else if (personagem == personagens[3]) {
+            console.log("É o Cleyton");
+        } else if (personagem == personagens[4]) {
+            console.log("É o Antônio");
+        } else if (personagem == personagens[5]) {
+            console.log("É o Hortêncio");
+        };
+    }
+    );
 };
 
 fechar.addEventListener("click", fecharModal);
