@@ -54,10 +54,10 @@ const fundo = document.getElementById("fundo");
 const fechar = document.getElementById("fechar");
 
 for (const personagem of personagens) {
-    personagem.addEventListener("click", abrirModal(personagem));
+    personagem.addEventListener("click", abrirModal);
 };
 
-function abrirModal(personagem) {
+function abrirModal() {
     fundo.style.display = "flex";
     
     // if(personagem == infoPersonagens[0]) {
