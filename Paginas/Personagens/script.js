@@ -1,4 +1,4 @@
-const personagens = document.getElementsById("abrirModal");
+const personagens = document.getElementById("abrirModal");
 const fundo = document.getElementById("fundo");
 const modal = document.getElementById("modal");
 
