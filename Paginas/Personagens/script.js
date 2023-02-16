@@ -58,7 +58,7 @@ for (const personagem of personagens) {
         fundo.style.display = "flex";
 
         if (personagem == infoPersonagens[0]) {
-            alert("É o Jailson")
+            console.log("Fununcia hein");
         };
     });
 };
