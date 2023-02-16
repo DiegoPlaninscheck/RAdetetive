@@ -118,6 +118,21 @@ a {
     text-align: center;
 }
 
+.columnLeft {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: auto;
+}
+
+.columnMiddle {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: auto;
+}
+
 .columnRight {
     align-items: flex-start;
     display: flex;
