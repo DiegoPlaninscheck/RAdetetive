@@ -5,12 +5,8 @@ const modal = document.getElementById("modal");
 // for (const personagem of personagens) {
 // };
 
-personagens.onclick = abrirModal();
-
-function abrirModal() {
+personagens.onclick = function abrirModal() {
     fundo.style.display = "block";
-    // modal.style.display = "block";
-    fundo.style.visibility = "visible";
 };
 
 const acabouJogo = JSON.parse(localStorage.getItem("ACABOUJOGO"));
