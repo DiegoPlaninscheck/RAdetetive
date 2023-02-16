@@ -141,7 +141,7 @@ a {
     align-items: flex-start;
     display: flex;
     height: 100%;
-    padding-left:1rem;
+    padding-left: 1rem;
     width: auto;
 }
 
@@ -183,7 +183,7 @@ a {
         width: 90vw;
     }
 
-    .columnleft {
+    .columnleft .image {
         display: none;
     }
 }
