@@ -60,6 +60,21 @@ a {
     width: 8vw;
 }
 
+#textoFinal {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#link {
+    width: 100%;
+    margin-top: 2rem;
+}
+
 @media only screen and (max-width: 600px) {
     select {
         width: 75vw;
@@ -68,20 +83,4 @@ a {
     a {
         width: 40vw;
     }
-}
-
-#textoFinal {
-    width: 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: large;
-    margin-top: 20px;
-    text-align: justify;
-}
-
-#link {
-    width: 100%;
-    margin-top: 20px;
 }
