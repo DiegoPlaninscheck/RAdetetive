@@ -115,7 +115,7 @@ a {
 }
 
 #modal p {
-    text-align: center;
+    text-align: start;
 }
 
 .columnLeft {
@@ -134,7 +134,7 @@ a {
     height: 100%;
     justify-content: center;
     padding: 0 1rem;
-    width: 10vw;
+    width: 15vw;
 }
 
 .columnRight {
