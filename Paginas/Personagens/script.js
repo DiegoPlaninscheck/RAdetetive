@@ -52,7 +52,6 @@ const infoPersonagens = [
 const personagens = document.getElementsByClassName("containerCharacter");
 const fundo = document.getElementById("fundo");
 const fechar = document.getElementById("fechar");
-const acabouJogo = JSON.parse(localStorage.getItem("ACABOUJOGO"));
 
 for (const personagem of personagens) {
     personagem.addEventListener("click", abrirModal(personagem));
@@ -60,7 +59,7 @@ for (const personagem of personagens) {
 
 function abrirModal(personagem) {
     fundo.style.display = "flex";
-
+    
     // if(personagem == infoPersonagens[0]) {
     //     alert("É o Jailson")
     // }
@@ -71,6 +70,8 @@ fechar.addEventListener("click", fecharModal);
 function fecharModal() {
     fundo.style.display = "none";
 };
+
+const acabouJogo = JSON.parse(localStorage.getItem("ACABOUJOGO"));
 
 if (acabouJogo) {
     const linkFinal = document.getElementById("botaoFinal");
