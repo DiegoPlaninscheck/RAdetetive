@@ -7,12 +7,12 @@ function confirmarEscolha() {
     const link = document.createElement("a")
     let textoFinal = "";
 
-    const assasino = JSON.parse(localStorage.getItem("ASSASSINO"))
-    const mensagemAssasino = assasino.menssagemFinal
+    const assassino = JSON.parse(localStorage.getItem("ASSASSINO"))
+    const mensagemAssassino = assassino.menssagemFinal
 
-    if (assasino.nome == select.value) {
+    if (assassino.nome == select.value) {
         venceu = true
-        textoFinal += "Parabéns você acertou\n\n" + mensagemAssasino.replace("PESSOAMORTA", morto)
+        textoFinal += "Parabéns você acertou\n\n" + mensagemAssassino.replace("PESSOAMORTA", morto)
     } else {
         venceu = false
         textoFinal += "Parabéns você é inutil"

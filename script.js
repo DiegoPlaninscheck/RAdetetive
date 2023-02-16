@@ -3,7 +3,7 @@ const personagens = [
         id: 1,
         nome: "Sr. Jailson Harrington",
         alguemAchou: true,
-        dicasAssasino: [
+        dicasAssassino: [
             "PESSOA  encontrou o corpo de PESSOAMORTA morto em um arbusto no jardim da frente da casa durante a manha",
             "A hora da morte foi as 23:00",
             "Foi notado marcas de estrangulamento junto de varios ossos quebrados",
@@ -17,7 +17,7 @@ const personagens = [
         id: 2,
         nome: "Sra. Jamila Harrington",
         alguemAchou: true,
-        dicasAssasino: [
+        dicasAssassino: [
             "PESSOA achou o PESSOAMORTA morto no chão da garagem da casa pela manha",
             "Foi descoberto que seu corpo estava cheio de furos feitos com uma chave de fenda",
             "No dia anterior a familia estava discutindo",
@@ -31,7 +31,7 @@ const personagens = [
         id: 3,
         nome: "Jered Harrington",
         alguemAchou: false,
-        dicasAssasino: [
+        dicasAssassino: [
             "PESSOAMORTA foi achada morta no meio do salao principal no meio da noite",
             "Foi descoberto que o corpo estava repleto de hematomas",
             "Havia restos de cinzas pela escada e corredor principal do segundo andar",
@@ -45,7 +45,7 @@ const personagens = [
         id: 4,
         nome: "Cleyton",
         alguemAchou: true,
-        dicasAssasino: [
+        dicasAssassino: [
             "PESSOA achou PESSOAMORTA morta na cozinha em uma poça de sangue",
             "Foram achados marcas de punhaladas em suas costas",
             "Toda a familia ficou abalada",
@@ -59,7 +59,7 @@ const personagens = [
         id: 5,
         nome: "Antônio",
         alguemAchou: true,
-        dicasAssasino: [
+        dicasAssassino: [
             "PESSOA achou PESSOAMORTA morto na sala de jogos jogado em um dos cantos da sala",
             "Havia varios itens quebrados pela sala",
             "Foi apurado que foi morto por uma forte pancada na cabeça",
@@ -73,7 +73,7 @@ const personagens = [
         id: 6,
         nome: "Hortêncio",
         alguemAchou: false,
-        dicasAssasino: [
+        dicasAssassino: [
             "PESSOADAFAMILIA foi achada morta jogada no meio do salao principal no início da manha",
             "Estava com machucados pelo corpo todo",
             "O resto da familia saiu de casa",

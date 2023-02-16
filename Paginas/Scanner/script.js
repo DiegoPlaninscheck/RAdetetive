@@ -1,11 +1,11 @@
 const pistasVistas = JSON.parse(localStorage.getItem("PISTASVISTAS"))
-const assasino = JSON.parse(localStorage.getItem("ASSASINO"))
+const assassino = JSON.parse(localStorage.getItem("ASSASSINO"))
 const morto = localStorage.getItem("MORTO");
 const quemAchouMorto = localStorage.getItem("QUEMACHOUMORTO")
-let pistaTexto = assasino.dicasAssasino[0]
+let pistaTexto = assassino.dicasAssassino[0]
 pistaTexto = pistaTexto.replace("PESSOAMORTA", morto)
 
-if (assasino.alguemAchou) {
+if (assassino.alguemAchou) {
     pistaTexto = pistaTexto.replace('PESSOA', quemAchouMorto)
 }
 
@@ -18,10 +18,10 @@ const texto5 = document.getElementById("texto5")
 
 function condicoesNormais() {
     texto1.setAttribute("value", pistaTexto)
-    texto2.setAttribute("value", assasino.dicasAssasino[1])
-    texto3.setAttribute("value", assasino.dicasAssasino[2])
-    texto4.setAttribute("value", assasino.dicasAssasino[3])
-    texto5.setAttribute("value", assasino.dicasAssasino[4])
+    texto2.setAttribute("value", assassino.dicasAssassino[1])
+    texto3.setAttribute("value", assassino.dicasAssassino[2])
+    texto4.setAttribute("value", assassino.dicasAssassino[3])
+    texto5.setAttribute("value", assassino.dicasAssassino[4])
 }
 
 function getVariavelTexto(idMarcador) {
