@@ -7,7 +7,7 @@ function confirmarEscolha() {
     const link = document.createElement("a")
     let textoFinal = "";
 
-    const assasino = JSON.parse(localStorage.getItem("ASSASINO"))
+    const assasino = JSON.parse(localStorage.getItem("ASSASSINO"))
     const mensagemAssasino = assasino.menssagemFinal
 
     if (assasino.nome == select.value) {
