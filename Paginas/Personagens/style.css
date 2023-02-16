@@ -115,7 +115,7 @@ a {
 }
 
 #modal p {
-    text-align: start;
+    text-align: center;
 }
 
 .columnLeft {
@@ -141,7 +141,7 @@ a {
     align-items: flex-start;
     display: flex;
     height: 100%;
-    padding: 0 1rem;
+    padding-left: 0 1rem;
     width: auto;
 }
 
