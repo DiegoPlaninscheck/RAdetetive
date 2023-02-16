@@ -85,28 +85,28 @@ const personagens = [
     },
 ];
 
-let assasino;
+let assassino;
 let possiveisVitmas;
 let morto;
 let quemAchouMorto = null;
 
 function iniciarNovoJogo() {
     const numeroAleatorio = parseInt(Math.random() * 5);
-    assasino = personagens.find(p => p.id == numeroAleatorio + 1);
+    assassino = personagens.find(p => p.id == numeroAleatorio + 1);
 
-    localStorage.setItem("ASSASINO", JSON.stringify(assasino));
+    localStorage.setItem("ASSASSINO", JSON.stringify(assassino));
 
     possiveisVitmas = personagens.filter((personagem) => {
-        let impossivelPorAssasino = false;
+        let impossivelPorAssassino = false;
 
-        for (let idNaoVitmasAssasino of assasino.pessoasImpossiveis) {
-            if (personagem.id == idNaoVitmasAssasino) {
-                impossivelPorAssasino = true;
+        for (let idNaoVitmasAssassino of assassino.pessoasImpossiveis) {
+            if (personagem.id == idNaoVitmasAssassino) {
+                impossivelPorAssassino = true;
                 break;
             };
         };
 
-        if (!impossivelPorAssasino) {
+        if (!impossivelPorAssassino) {
             return personagem;
         };
     });
@@ -115,7 +115,7 @@ function iniciarNovoJogo() {
     morto = possiveisVitmas[numeroAleatorio2];
     possiveisVitmas.splice(numeroAleatorio2, 1);
 
-    if (assasino.alguemAchou) {
+    if (assassino.alguemAchou) {
         const numeroAleatorio3 = parseInt(Math.random() * possiveisVitmas.length);
 
         quemAchouMorto = possiveisVitmas[numeroAleatorio3];

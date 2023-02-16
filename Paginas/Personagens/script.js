@@ -1,6 +1,16 @@
+const infoPersonagens = [
+    { foto: "", nome: "", profissao: "", idade: "", caracteristica1: "", caracteristica1: "" },
+    { foto: "", nome: "", profissao: "", idade: "", caracteristica1: "", caracteristica1: "" },
+    { foto: "", nome: "", profissao: "", idade: "", caracteristica1: "", caracteristica1: "" },
+    { foto: "", nome: "", profissao: "", idade: "", caracteristica1: "", caracteristica1: "" },
+    { foto: "", nome: "", profissao: "", idade: "", caracteristica1: "", caracteristica1: "" },
+    { foto: "", nome: "", profissao: "", idade: "", caracteristica1: "", caracteristica1: "" }
+];
+
 const personagens = document.getElementsByClassName("containerCharacter");
 const fundo = document.getElementById("fundo");
 const fechar = document.getElementById("fechar");
+const acabouJogo = JSON.parse(localStorage.getItem("ACABOUJOGO"));
 
 for (const personagem of personagens) {
     personagem.addEventListener("click", abrirModal);
@@ -15,8 +25,6 @@ fechar.addEventListener("click", fecharModal);
 function fecharModal() {
     fundo.style.display = "none";
 };
-
-const acabouJogo = JSON.parse(localStorage.getItem("ACABOUJOGO"));
 
 if (acabouJogo) {
     const linkFinal = document.getElementById("botaoFinal");
