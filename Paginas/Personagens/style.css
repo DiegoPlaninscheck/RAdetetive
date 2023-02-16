@@ -169,8 +169,8 @@ a {
     }
 
     .image {
-        height: 60vw;
-        width: 40vw;
+        height: 40vw;
+        width: 20vw;
     }
 
 
@@ -184,6 +184,6 @@ a {
     }
 
     .columnMiddle {
-        
+        width: 50vw;
     }
 }
