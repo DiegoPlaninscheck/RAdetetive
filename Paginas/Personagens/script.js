@@ -57,7 +57,7 @@ for (const personagem of personagens) {
     personagem.addEventListener("click", function abrirModal() {
         fundo.style.display = "flex";
 
-        if (personagem == infoPersonagens[0]) {
+        if (personagens[0]) {
             console.log("Fununcia hein");
         };
     });
