@@ -185,5 +185,6 @@ a {
 
     .columnleft .image {
         display: none;
+        visibility: hidden;
     }
 }
