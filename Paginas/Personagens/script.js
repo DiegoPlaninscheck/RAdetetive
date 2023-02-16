@@ -54,15 +54,13 @@ const fundo = document.getElementById("fundo");
 const fechar = document.getElementById("fechar");
 
 for (const personagem of personagens) {
-    personagem.addEventListener("click", abrirModal);
-};
+    personagem.addEventListener("click", function abrirModal() {
+        fundo.style.display = "flex";
 
-function abrirModal() {
-    fundo.style.display = "flex";
-    
-    if(personagem == infoPersonagens[0]) {
-        alert("É o Jailson")
-    }
+        if (personagem == infoPersonagens[0]) {
+            alert("É o Jailson")
+        };
+    });
 };
 
 fechar.addEventListener("click", fecharModal);
