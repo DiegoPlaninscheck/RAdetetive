@@ -52,7 +52,7 @@ const personagens = [
             "Jered foi visto resmungando enquanto limpava uma parte do chao do salao principal",
             "Uma faca ensanguentada foi achada debaixo de um dos armários do salao principal"
         ],
-        menssagemFinal: "Matou a PESSOAMORTA pois sempre a destratou desde que começou a trabalhar na casa dos Harrington, em mais um dos dias de abuso a Clayton enquanto o mesmo trabalhava no jardim, ele se cansou e perseguiu a PESSOA pela casa ate que a encurralou na cozinha e a apunhalou diversas vezes enquanto descarregava sua raiva",
+        menssagemFinal: "Matou a PESSOAMORTA pois sempre a destratou desde que começou a trabalhar na casa dos Harrington, em mais um dos dias de abuso a Cleyton enquanto o mesmo trabalhava no jardim, ele se cansou e perseguiu a PESSOAMORTA pela casa ate que a encurralou na cozinha e a apunhalou diversas vezes enquanto descarregava sua raiva",
         pessoasImpossiveis: [3, 4]
     },
     {
