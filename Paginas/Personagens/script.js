@@ -60,7 +60,7 @@ for (const personagem of personagens) {
     personagem.addEventListener("click", () => {
         fundo.style.display = "flex";
 
-        let nomePersonagem = infoPersonagens.find(pers => pers.id == personagem.id)
+        let nomePersonagem = infoPersonagens.find(pers => pers.id == personagem.id).nome
 
         console.log(nomePersonagem);
         // if (personagem == personagens[0]) {
