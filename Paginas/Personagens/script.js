@@ -5,8 +5,8 @@ const infoPersonagens = [
         nome: "Sr. Jailson Harrington",
         profissao: "Dono da casa",
         idade: "49 anos",
-        aracteristica1: "Sala preferida é a de jogos",
-        caracteristica1: "É duro com seus empregados"
+        caracteristica1: "Sala preferida é a de jogos",
+        caracteristica2: "É duro com seus empregados"
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ const infoPersonagens = [
         profissao: "Esposa di Jailson",
         idade: "39 anos",
         caracteristica1: "Sala preferida é a biblioteca",
-        caracteristica1: "Bem espalhafatosa"
+        caracteristica2: "Bem espalhafatosa"
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ const infoPersonagens = [
         profissao: "Filho do casal",
         idade: "19 anos",
         caracteristica1: "Gosta de basquete",
-        caracteristica1: "Tem um estilo meio gótico"
+        caracteristica2: "Tem um estilo meio gótico"
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ const infoPersonagens = [
         profissao: "Jardineiro",
         idade: "33 anos",
         caracteristica1: "Tem um carro com todas as ferramentas para uso no jardim",
-        caracteristica1: "Careca"
+        caracteristica2: "Careca"
     },
     {
         id: 5,
@@ -42,7 +42,7 @@ const infoPersonagens = [
         profissao: "Motorista particular",
         idade: "25 anos",
         caracteristica1: "Na hora dos intervalos costuma fumar",
-        caracteristica1: "Finais de semana vive em balada"
+        caracteristica2: "Finais de semana vive em balada"
     },
     {
         id: 6,
@@ -51,7 +51,7 @@ const infoPersonagens = [
         profissao: "Mordomo",
         idade: "80 anos",
         caracteristica1: "Trabalha para família à 15 anos",
-        caracteristica1: "Usa uma aliança de ouro bem grossa no dedo anelar esquerdo"
+        caracteristica2: "Usa uma aliança de ouro bem grossa no dedo anelar esquerdo"
     }
 ];
 
@@ -74,10 +74,10 @@ for (const personagem of personagens) {
 
         foto.src = infoPersonagem.foto;
         nome.innerText = infoPersonagem.nome;
-        idade.innerText = infoPersonagem.nome;
-        profissao.innerText = infoPersonagem.nome;
-        caracteristica1.innerText = infoPersonagem.nome;
-        caracteristica2.innerText = infoPersonagem.nome;
+        idade.innerText = infoPersonagem.idade;
+        profissao.innerText = infoPersonagem.profissao;
+        caracteristica1.innerText = infoPersonagem.caracteristica1;
+        caracteristica2.innerText = infoPersonagem.caracteristica2;
     });
 };
 
