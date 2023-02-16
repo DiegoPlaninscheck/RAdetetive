@@ -11,7 +11,7 @@ const infoPersonagens = [
     {
         id: 2,
         foto: "https://st2.depositphotos.com/1075946/7097/i/600/depositphotos_70978559-stock-photo-peaceful-middle-aged-woman.jpg",
-        nome: "Sr. Jailson Harrington",
+        nome: "Sra. Jamila Harrington",
         profissao: "Esposa di Jailson",
         idade: "39 anos",
         caracteristica1: "Sala preferida é a biblioteca",
@@ -27,6 +27,7 @@ const infoPersonagens = [
         caracteristica1: "Tem um estilo meio gótico"
     },
     {
+        id: 4,
         foto: "https://img.freepik.com/fotos-premium/jovem-jardineiro-cuida-de-plantas-perenes-no-centro-de-jardinagem_175086-1538.jpg",
         nome: "Cleyton",
         profissao: "Jardineiro",
@@ -35,6 +36,7 @@ const infoPersonagens = [
         caracteristica1: "Careca"
     },
     {
+        id: 5,
         foto: "https://cptstatic.s3.amazonaws.com/imagens/enviadas/materias/materia14301/motorista-particular-cursos-cpt.jpg",
         nome: "Antônio",
         profissao: "Motorista particular",
@@ -43,6 +45,7 @@ const infoPersonagens = [
         caracteristica1: "Finais de semana vive em balada"
     },
     {
+        id: 6,
         foto: "https://img3.stockfresh.com/files/s/stockyimages/m/45/4955402_stock-photo-handsome-old-man-in-suit.jpg",
         nome: "Hortêncio",
         profissao: "Mordomo",
@@ -54,39 +57,28 @@ const infoPersonagens = [
 
 const personagens = document.getElementsByClassName("containerCharacter");
 const fundo = document.getElementById("fundo");
+const nome = document.getElementById("nome");
+const idade = document.getElementById("idade");
+const profissao = document.getElementById("profissao");
+const caracteristica1 = document.getElementById("caracteristica1");
+const caracteristica2 = document.getElementById("caracteristica2");
 const fechar = document.getElementById("fechar");
+const acabouJogo = JSON.parse(localStorage.getItem("ACABOUJOGO"));
 
 for (const personagem of personagens) {
     personagem.addEventListener("click", () => {
         fundo.style.display = "flex";
 
-        let nomePersonagem = infoPersonagens.find(pers => pers.id == personagem.id).nome
+        let infoPersonagem = infoPersonagens.find(pers => pers.id == personagem.id);
 
-        console.log(nomePersonagem);
-        // if (personagem == personagens[0]) {
-        //     console.log("É o Jailson");
-        // } else if (personagem == personagens[1]) {
-        //     console.log("É a jamila");
-        // } else if (personagem == personagens[2]) {
-        //     console.log("É o Jered");
-        // } else if (personagem == personagens[3]) {
-        //     console.log("É o Cleyton");
-        // } else if (personagem == personagens[4]) {
-        //     console.log("É o Antônio");
-        // } else if (personagem == personagens[5]) {
-        //     console.log("É o Hortêncio");
-        // };
-    }
-    );
+        nome.innerText = infoPersonagem.nome;
+    });
 };
 
-fechar.addEventListener("click", fecharModal);
-
-function fecharModal() {
+fechar.addEventListener("click", () => {
     fundo.style.display = "none";
-};
+});
 
-const acabouJogo = JSON.parse(localStorage.getItem("ACABOUJOGO"));
 
 if (acabouJogo) {
     const linkFinal = document.getElementById("botaoFinal");
