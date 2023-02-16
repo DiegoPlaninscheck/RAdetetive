@@ -115,7 +115,7 @@ a {
 }
 
 #modal p {
-    text-align: center;
+    text-align: start;
 }
 
 .columnLeft {
@@ -178,8 +178,12 @@ a {
         width: 40vw;
     }
 
-    .modal {
+    #modal {
         height: 60vh;
-        width: 80vw;
+        width: auto;
+    }
+
+    .columnMiddle {
+        
     }
 }
