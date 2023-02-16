@@ -5,7 +5,7 @@ const modal = document.getElementById("modal");
 // for (const personagem of personagens) {
 // };
 
-personagens.addEventListener("click", abrirModal());
+personagens.onclick = abrirModal();
 
 function abrirModal() {
     fundo.style.display = "block";
