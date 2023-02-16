@@ -111,7 +111,7 @@ a {
     height: 50vh;
     justify-content: space-between;
     padding: 2rem;
-    width: 50vw;
+    width: auto;
 }
 
 .modal p {
