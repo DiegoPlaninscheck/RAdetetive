@@ -7,7 +7,7 @@ for (const personagem of personagens) {
 };
 
 function abrirModal() {
-    fundo.style.display = "block";
+    fundo.style.display = "flex";
 };
 
 fechar.addEventListener("click", fecharModal);
