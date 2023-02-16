@@ -9,7 +9,8 @@ personagens.onclick = abrirModal();
 
 function abrirModal() {
     fundo.style.display = "block";
-    modal.style.display = "block";
+    // modal.style.display = "block";
+    fundo.style.visibility = "visible";
 };
 
 const acabouJogo = JSON.parse(localStorage.getItem("ACABOUJOGO"));
