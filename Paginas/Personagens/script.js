@@ -57,6 +57,7 @@ const infoPersonagens = [
 
 const personagens = document.getElementsByClassName("containerCharacter");
 const fundo = document.getElementById("fundo");
+const foto = document.getElementById("foto")
 const nome = document.getElementById("nome");
 const idade = document.getElementById("idade");
 const profissao = document.getElementById("profissao");
@@ -71,7 +72,12 @@ for (const personagem of personagens) {
 
         let infoPersonagem = infoPersonagens.find(pers => pers.id == personagem.id);
 
+        foto.src = infoPersonagem.foto;
         nome.innerText = infoPersonagem.nome;
+        idade.innerText = infoPersonagem.nome;
+        profissao.innerText = infoPersonagem.nome;
+        caracteristica1.innerText = infoPersonagem.nome;
+        caracteristica2.innerText = infoPersonagem.nome;
     });
 };
 
