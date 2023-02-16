@@ -1,5 +1,6 @@
 const infoPersonagens = [
     {
+        id: 1,
         foto: "https://st.depositphotos.com/1075946/3664/i/600/depositphotos_36647513-stock-photo-handsome-mature-man.jpg",
         nome: "Sr. Jailson Harrington",
         profissao: "Dono da casa",
@@ -8,6 +9,7 @@ const infoPersonagens = [
         caracteristica1: "É duro com seus empregados"
     },
     {
+        id: 2,
         foto: "https://st2.depositphotos.com/1075946/7097/i/600/depositphotos_70978559-stock-photo-peaceful-middle-aged-woman.jpg",
         nome: "Sr. Jailson Harrington",
         profissao: "Esposa di Jailson",
@@ -16,6 +18,7 @@ const infoPersonagens = [
         caracteristica1: "Bem espalhafatosa"
     },
     {
+        id: 3,
         foto: "https://i.pinimg.com/736x/84/4b/51/844b51c3e288b767404b39b454e01c60.jpg",
         nome: "Jered Harrington",
         profissao: "Filho do casal",
@@ -54,22 +57,25 @@ const fundo = document.getElementById("fundo");
 const fechar = document.getElementById("fechar");
 
 for (const personagem of personagens) {
-    personagem.addEventListener("click", function abrirModal() {
+    personagem.addEventListener("click", () => {
         fundo.style.display = "flex";
 
-        if (personagem == personagens[0]) {
-            console.log("É o Jailson");
-        } else if (personagem == personagens[1]) {
-            console.log("É a jamila");
-        } else if (personagem == personagens[2]) {
-            console.log("É o Jered");
-        } else if (personagem == personagens[3]) {
-            console.log("É o Cleyton");
-        } else if (personagem == personagens[4]) {
-            console.log("É o Antônio");
-        } else if (personagem == personagens[5]) {
-            console.log("É o Hortêncio");
-        };
+        let nomePersonagem = infoPersonagens.find(pers => pers.id == personagem.id)
+
+        console.log(nomePersonagem);
+        // if (personagem == personagens[0]) {
+        //     console.log("É o Jailson");
+        // } else if (personagem == personagens[1]) {
+        //     console.log("É a jamila");
+        // } else if (personagem == personagens[2]) {
+        //     console.log("É o Jered");
+        // } else if (personagem == personagens[3]) {
+        //     console.log("É o Cleyton");
+        // } else if (personagem == personagens[4]) {
+        //     console.log("É o Antônio");
+        // } else if (personagem == personagens[5]) {
+        //     console.log("É o Hortêncio");
+        // };
     }
     );
 };
