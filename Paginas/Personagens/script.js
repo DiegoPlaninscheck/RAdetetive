@@ -55,11 +55,15 @@ const fechar = document.getElementById("fechar");
 const acabouJogo = JSON.parse(localStorage.getItem("ACABOUJOGO"));
 
 for (const personagem of personagens) {
-    personagem.addEventListener("click", abrirModal);
+    personagem.addEventListener("click", abrirModal(personagem));
 };
 
-function abrirModal() {
+function abrirModal(personagem) {
     fundo.style.display = "flex";
+
+    if(personagem == infoPersonagens[0]) {
+        alert("É o Jailson")
+    }
 };
 
 fechar.addEventListener("click", fecharModal);
