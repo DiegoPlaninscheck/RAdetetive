@@ -1,7 +1,11 @@
 let venceu = null;
+let chutou = false
 const morto = localStorage.getItem("MORTO")
 
 function confirmarEscolha() {
+    if(chutou){
+        return
+    }
     const select = document.getElementById("nomes")
     const div = document.getElementById("textoFinal")
     const link = document.createElement("a")
@@ -24,6 +28,7 @@ function confirmarEscolha() {
 
     div.innerText = textoFinal;
     div.appendChild(link)
+    chutou = true
 }
 
 function checarOpcoes() {
